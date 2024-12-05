@@ -1,0 +1,82 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navigation-container {
+    width: 100%;
+    height: 7vh;
+    background:black;
+    position: static;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-div {
+    display: flex;
+    margin: 0px 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin-top: -5px;
+    padding: 0px 5px 0px 0px;
+    transition: 2s linear;
+
+}
+
+.logo-img {
+    border-radius: 50%;
+
+}
+
+.ul-menu-div {
+    display: flex;
+    list-style: none;
+}
+
+.ul-menu-div li:before {
+    content: " ";
+    width: 0;
+    background: white;
+    height: 2px;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+}
+
+ul {
+    margin-top: 9px;
+    margin-bottom: 1rem;
+}
+
+.ul-menu-div li {
+    font-family: "Tillana", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    margin: 0px 40px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: skyblue;
+}
+
+.ul-menu-div li:hover::before {
+    width: 100%;
+    background: #17dcb5;
+    background: linear-gradient(135deg, #D73CB1, #2E7084);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

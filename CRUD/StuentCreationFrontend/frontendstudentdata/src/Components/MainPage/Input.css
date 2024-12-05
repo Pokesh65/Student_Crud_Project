@@ -1,0 +1,95 @@
+:root {
+    --bodycolor: #1c2841;
+    --green: #2edd57;
+    --red: rgb(255, 33, 33);
+    --white: #f0ffff;
+
+}
+
+.Input-container,
+.entryarea,
+.inputCl,
+.labelline {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.Input-container {
+    margin-top: 7vh;
+    width: 15vw;
+}
+
+.entryarea {
+    position: relative;
+    height: 5vh;
+    line-height: 10vh;
+ 
+}
+
+.inputCl,select{
+    position: absolute;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 1PX;
+    line-height: 5vh;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: 2px solid white;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+select{
+    margin-top: 2vh;
+}
+select>option{
+    background: #1c2841;
+    color:white;
+}
+
+.labelline {
+    position: absolute;
+    font-size: 1em;
+    padding:0px 0px;
+    color: white;
+    line-height: 7vh;
+    background: transparent;
+    transition: 0.2s ease;
+}
+
+.inputCl:focus,
+.inputCl:not(:placeholder-shown),select:focus,select:not(:placeholder-shown){
+    
+    color: var(--green);
+    border-bottom: 3px solid var(--green);
+
+}
+
+
+.inputCl:focus +.labelline,.inputCl:not(:placeholder-shown) +.labelline,select:focus +.labelline,select:not(:placeholder-shown) +.labelline {
+    color: var(--green);
+    height: 0px;
+    line-height: 5px;
+    padding: 2px 8px;
+    transform: translate(-15px, -10px) scale(0.88);
+    z-index: 1111;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+
+select>option[value=""] +.labelline{
+    position: absolute;
+    font-size: 1em;
+    padding:0px 0px;
+    color: white;
+    line-height: 7vh;
+    background: transparent;
+    transition: 0.2s ease;
+
+}

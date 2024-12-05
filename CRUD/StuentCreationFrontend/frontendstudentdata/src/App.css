@@ -1,0 +1,41 @@
+.Header-container{
+    width: 100% !important;
+    height: 7vh;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    
+}
+
+.Body-container{
+    width: 100% !important;
+    height: 100%;
+    position: static !important;
+    /* background-image: linear-gradient(135deg, #1f4037 10%, #99f2c8 100%);*/
+   /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=6b85b2&c2=362318&gt=r&gd=dbb
+*/
+/* background: rgba(107, 133, 178, 1.0);
+background: radial-gradient(at center bottom, rgba(107, 133, 178, 1.0), rgba(54, 35, 24, 1.0)); */
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    display: none;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #212529;
+}
+::-webkit-scrollbar-thumb{
+    /* border: 0.005px solid white; */
+    border-radius: 10px;
+    height: auto;
+    background-image: linear-gradient(135deg,#214 0%,#1c033a 55%, #214 100%);
+}
+::-webkit-scrollbar-button{
+    background-color: #212529;
+    display: none;
+
+}

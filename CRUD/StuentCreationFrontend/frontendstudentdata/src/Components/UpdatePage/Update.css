@@ -1,0 +1,118 @@
+.Update-container {
+    width: 100%;
+    height: 100vh;
+    position: static;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 50%, rgba(149,0,255,1) 50%, rgba(78,0,150,1) 100%);
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth; */
+   
+}
+
+.Update-content {
+    margin-top: -3vh;
+    height: 93vh;
+    border: 1px solid orangered;
+    border: none;
+    display: grid;
+    place-content: center;
+
+}
+
+.Update-tittle>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+    font-optical-sizing: auto;
+    font-weight:400px;
+    font-style: normal;
+    font-weight: bolder;
+    word-spacing: 10px;
+    color: white;
+    text-shadow: 1px 2px 3px black, 1px 2px 3px whitesmoke, 2px 3px 5px rgb(0, 0, 0);
+}
+
+.Update-tittle:hover h2 {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 3px rgb(255, 255, 255), 1px 2px 3px rgb(142, 137, 137), 2px 3px 5px rgb(107, 104, 104);
+    cursor: pointer;
+}
+
+.Update-content-form {
+    margin-top: 6vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 90vw; */
+    border: 1px;
+    border-radius: 10px;
+
+}
+
+
+.Form-Div {
+    border: 1px solid rgba(252, 252, 252, 0.29);
+    /* border: none; */
+    width: 76.1vw;
+    height: 400px;
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+.Form-Div:hover{
+    border: 0.02px solid rgba(255, 255, 255, 0.525);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+
+.Ipd-Row-One {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4vh;
+}
+
+.Ipd-Row-Two {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Ipd-Row-Three {
+    margin-left: 20.5vw;
+    width: 35.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.Ipd-Row-Three>Button {
+    color: white;
+    background-image: linear-gradient(135deg, #212529 10%, #214 100%);
+
+}
+
+.Ipd-Row-Three>Button:hover{
+    color: white;
+}
+
+.Ipd-Row-Three>Button:hover {
+    color: white;
+    background: #1A362A;
+    background: linear-gradient(135deg, #1A362A, #58C0CD);
+}
+.P-validation{
+    position: absolute;
+    margin-top: 2vh;
+    color: red;
+    font-size: small;
+}

@@ -1,0 +1,219 @@
+.ListOfData-container {
+
+    width: 100%;
+    height: 100vh;
+    position: static;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 50%, rgba(149,0,255,1) 50%, rgba(78,0,150,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ListOfData-content {
+    height: 93vh;
+    border: 1px solid transparent;
+    place-items: center;
+    overflow: hidden;
+
+
+}
+
+.Top-div-Bar {
+
+    margin-top: 5vh;
+    width: 90vw;
+    height: 6vh;
+    border: #27797c 2px solid;
+    border: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Add-data{
+    margin-left: 4vw;
+}
+
+.List-title {
+    position: absolute;
+    margin-left: 5.1vw;
+    /* text-transform: uppercase; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: x-large;
+    word-spacing: 10px;
+    color: white;
+    text-shadow: 0px 0px 3px rgb(81, 51, 92), 0px 1px 3px rgb(119, 22, 164), 0px 3px 5px rgb(254, 250, 250);
+    margin-top: 5vh;
+}
+
+.List-title:hover {
+    color: rgb(130, 41, 189);
+    text-shadow: 1px 2px 3px rgb(255, 255, 255), 1px 2px 3px rgb(142, 137, 137), 2px 3px 5px rgb(107, 104, 104);
+    cursor: pointer;
+}
+
+.Search-div {
+    border: 2px solid white;
+    width: 28vw;
+    border-radius: 40px;
+    box-shadow: 0 10px 25px ☐ rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.search-input {
+    padding-left: 10px;
+    background-color: transparent;
+    width: 25vw;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-inline: none;
+    border: none;
+
+}
+#Search-icon{
+    color: white;
+    margin: 1px;
+}
+
+.Search-div:hover #Search-icon {
+    color: black;
+}
+
+.Search-div:hover {
+    border-color: black;
+}
+
+.Search-div input:focus {
+    border: none;
+    border-inline: none;
+    transition: 0.35s ease;
+    inset-block: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s;
+    outline: none;
+}
+
+
+.Table-div {
+    margin-top: 5vh;
+    width: 90vw;
+    border: 1px;
+    height: 60vh;
+    background-color: rgb(69, 99, 174);
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.Table-div:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.Add-data>a>Button {
+    color: white;
+    background-image: linear-gradient(135deg, #1c446c 10%,  rgb(69, 99, 174) 100%);
+
+}
+
+.Add-data>a>Button:hover {
+    color: white;
+    background: #1A362A;
+    background: linear-gradient(135deg, #1A362A, #58C0CD);
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: small;
+    text-align: center;
+}
+
+thead>tr>td {
+    background-color: rgba(0, 0, 0, 0.612);
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 0;
+}
+
+tbody>tr>td {
+    width: 0;
+    height: 0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    border-bottom: 2px solid #948194;
+    color: black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #5f9ea069;
+    border-bottom: 2px solid #396567;
+    color: white;
+}
+
+.PageNation {
+    margin-top: 3vh;
+    width: 90vw;
+    border: 1px;
+    height: 7vh;
+    /* border: #27797c 2px solid; */
+    color: black;
+    position: relative;
+
+}
+.Pnation-button{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.Pnation-button>Button{
+    color: white;
+    background-image: linear-gradient(135deg, #1c446c 10%,  rgb(69, 99, 174) 100%);
+}
+.Pnation-button>Button:hover{
+    color: white;
+    background: #1A362A;
+    background: linear-gradient(135deg, #237ca8, #58C0CD);
+}
+.btn-info {
+    gap: 10px;
+    --bs-btn-color: #000;
+    --bs-btn-bg: rgb(69, 99, 174);
+    --bs-btn-border-color: rgb(22, 46, 108);
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: rgb(69, 99, 174);
+    --bs-btn-hover-border-color:rgb(22, 46, 108);
+    --bs-btn-focus-shadow-rgb: 11, 172, 204;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: rgb(69, 99, 174);
+    --bs-btn-active-border-color: rgb(22, 46, 108);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: rgb(69, 99, 174);
+    --bs-btn-disabled-border-color: rgb(22, 46, 108);
+}
+.Btn-class-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Delete-button,.Update-button{
+    cursor: pointer;
+    
+}
